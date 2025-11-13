@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "编译运行贪吃蛇",
+            "type": "shell",
+            "command": "g++ -std=c++20 ${file} -o ${fileDirname}/SnakeGame -I/usr/local/include -L/usr/local/lib -lsfml-graphics -lsfml-window -lsfml-system && ${fileDirname}/SnakeGame",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "编译并运行贪吃蛇游戏 (SFML 3.0)"
+        }
+    ]
+}
